@@ -1,7 +1,15 @@
-# learning-analytics
+## IMD0252 - TÓPICOS ESPECIAIS EM INFORMÁTICA EDUCACIONAL "C"
 
-Explicação dos arquivos:<br>
+### Ferramentas
+
+* [Anaconda](https://www.anaconda.com/download/) 
+* [Python 3.6+](https://www.python.org/) 
+* [Jupyter](http://jupyter.org/) 
+
+### Explicação dos arquivos:
+
 * **01_Data Mining.ipynb** - Arquivo que está sendo realizado o tratamento dos dados<br>
+* **02_analyze.ipynb** - Contém uma análise estatística dos dados<br>
 * **all_turma_matriculados.csv** - Contém os links para as turmas e os alunos<br>
 * **disciplinas.csv** - Disciplinas que estamos analizando <br>
 * **docentes.csv** - Lista com todos os professores da UF, essa é igual a da API. Ela é usada para fazer uma filtragem de profs<br>
