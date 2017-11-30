@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-widgets-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-widgets-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="a2330ce2-69c3-4baf-809d-78966d688349"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"f374c295-cc3b-4cd5-bac8-9ae3ef512820":{"roots":{"references":[{"attributes":{"children":[{"id":"5658f68d-4334-4989-8ecb-9ccb9a0a0aeb","type":"Select"}]},"id":"2e87f73a-d55e-490e-97f8-19d0cb0f29ab","type":"WidgetBox"},{"attributes":{"callback":null,"options":["CHARLES ANDRYE GALVAO MADEIRA","ANDERSON PAIVA CRUZ","SAMYR SILVA BEZERRA JACOME","CARLOS AUGUSTO PROLO","REGIVAN HUGO NUNES SANTIAGO","ADJA FERREIRA DE ANDRADE","RAFAELA HORACINA SILVA ROCHA SOARES","LOURENA KARIN DE MEDEIROS ROCHA","CARLOS AUGUSTO PROLO","ANTONIO IGOR SILVA DE OLIVEIRA","UMBERTO RIVIECCIO","ATHANASIOS TSOUANAS","ALYSON MATHEUS DE CARVALHO SOUZA"],"title":"Option:","value":"foo"},"id":"99fd06ab-3272-4eb7-8819-6407bbc2f137","type":"Select"},{"attributes":{"children":[{"id":"06486da7-584d-48a4-9995-dd4264dee5c3","type":"Select"},{"id":"9255a824-e9c3-4fb1-b8d5-2b75b6fd07b1","type":"Select"}]},"id":"7ff288ee-a4cc-409f-ab91-e291d1ab9a1e","type":"WidgetBox"},{"attributes":{"callback":null,"options":["CHARLES ANDRYE GALVAO MADEIRA","ANDERSON PAIVA CRUZ","SAMYR SILVA BEZERRA JACOME","CARLOS AUGUSTO PROLO","REGIVAN HUGO NUNES SANTIAGO","ADJA FERREIRA DE ANDRADE","RAFAELA HORACINA SILVA ROCHA SOARES","LOURENA KARIN DE MEDEIROS ROCHA","CARLOS AUGUSTO PROLO","ANTONIO IGOR SILVA DE OLIVEIRA","UMBERTO RIVIECCIO","ATHANASIOS TSOUANAS","ALYSON MATHEUS DE CARVALHO SOUZA"],"title":"Professores:","value":"foo"},"id":"e1e5f748-f782-4c82-90d8-59f9f05e4079","type":"Select"},{"attributes":{"callback":null,"options":["C\u00c1LCULO DIFERENCIAL E INTEGRAL I","FUNDAMENTOS MATEM\u00c1TICOS DA COMPUTA\u00c7\u00c3O I","FUNDAMENTOS MATEM\u00c1TICOS DA COMPUTA\u00c7\u00c3O II","RESOLU\u00c7\u00c3O DE PROBLEMAS MATEM\u00c1TICOS PARA TI"],"title":"Disciplinas:","value":"C\u00c1LCULO DIFERENCIAL E INTEGRAL I"},"id":"d7cf7fd4-fbb6-4a54-8aad-f3f94435f498","type":"Select"},{"attributes":{"callback":null,"options":["CHARLES ANDRYE GALVAO MADEIRA","ANDERSON PAIVA CRUZ","SAMYR SILVA BEZERRA JACOME","CARLOS AUGUSTO PROLO","REGIVAN HUGO NUNES SANTIAGO","ADJA FERREIRA DE ANDRADE","RAFAELA HORACINA SILVA ROCHA SOARES","LOURENA KARIN DE MEDEIROS ROCHA","CARLOS AUGUSTO PROLO","ANTONIO IGOR SILVA DE OLIVEIRA","UMBERTO RIVIECCIO","ATHANASIOS TSOUANAS","ALYSON MATHEUS DE CARVALHO SOUZA"],"title":"Professores:","value":"foo"},"id":"735129a5-f4cc-45b1-ad56-3b10aa8893a8","type":"Select"},{"attributes":{"callback":null,"options":["CHARLES ANDRYE GALVAO MADEIRA","ANDERSON PAIVA CRUZ","SAMYR SILVA BEZERRA JACOME","CARLOS AUGUSTO PROLO","REGIVAN HUGO NUNES SANTIAGO","ADJA FERREIRA DE ANDRADE","RAFAELA HORACINA SILVA ROCHA SOARES","LOURENA KARIN DE MEDEIROS ROCHA","CARLOS AUGUSTO PROLO","ANTONIO IGOR SILVA DE OLIVEIRA","UMBERTO RIVIECCIO","ATHANASIOS TSOUANAS","ALYSON MATHEUS DE CARVALHO SOUZA"],"title":"Professores:","value":"foo"},"id":"06486da7-584d-48a4-9995-dd4264dee5c3","type":"Select"},{"attributes":{"callback":null,"options":["C\u00c1LCULO DIFERENCIAL E INTEGRAL I","RESOLU\u00c7\u00c3O DE PROBLEMAS MATEM\u00c1TICOS PARA TI","FUNDAMENTOS MATEM\u00c1TICOS DA COMPUTA\u00c7\u00c3O I","FUNDAMENTOS MATEM\u00c1TICOS DA COMPUTA\u00c7\u00c3O II"],"title":"Disciplinas:","value":"C\u00c1LCULO DIFERENCIAL E INTEGRAL I"},"id":"9255a824-e9c3-4fb1-b8d5-2b75b6fd07b1","type":"Select"},{"attributes":{"children":[{"id":"71285cbe-f7b2-424c-9808-05af3b84329a","type":"Select"},{"id":"7df5891f-b847-48f1-9a26-8dfb45e4da9f","type":"Select"}]},"id":"c05c9402-f14b-4c1a-bb56-1ae5b622b3e0","type":"WidgetBox"},{"attributes":{"callback":null,"options":["C\u00c1LCULO DIFERENCIAL E INTEGRAL I","FUNDAMENTOS MATEM\u00c1TICOS DA COMPUTA\u00c7\u00c3O I","FUNDAMENTOS MATEM\u00c1TICOS DA COMPUTA\u00c7\u00c3O II","RESOLU\u00c7\u00c3O DE PROBLEMAS MATEM\u00c1TICOS PARA TI"],"title":"Disciplinas:","value":"C\u00c1LCULO DIFERENCIAL E INTEGRAL I"},"id":"7df5891f-b847-48f1-9a26-8dfb45e4da9f","type":"Select"},{"attributes":{"callback":null,"options":["foo","bar","baz","quux"],"title":"Option:","value":"foo"},"id":"5658f68d-4334-4989-8ecb-9ccb9a0a0aeb","type":"Select"},{"attributes":{"callback":null,"options":["ADJA FERREIRA DE ANDRADE","ALYSON MATHEUS DE CARVALHO SOUZA","ANDERSON PAIVA CRUZ","ANTONIO IGOR SILVA DE OLIVEIRA","ATHANASIOS TSOUANAS","CARLOS AUGUSTO PROLO","CARLOS AUGUSTO PROLO","CHARLES ANDRYE GALVAO MADEIRA","LOURENA KARIN DE MEDEIROS ROCHA","RAFAELA HORACINA SILVA ROCHA SOARES","REGIVAN HUGO NUNES SANTIAGO","SAMYR SILVA BEZERRA JACOME","UMBERTO RIVIECCIO"],"title":"Professores:","value":"foo"},"id":"71285cbe-f7b2-424c-9808-05af3b84329a","type":"Select"},{"attributes":{"children":[{"id":"99fd06ab-3272-4eb7-8819-6407bbc2f137","type":"Select"}]},"id":"bbb2da19-a10c-4c04-a67d-26238658d1c7","type":"WidgetBox"},{"attributes":{"children":[{"id":"e1e5f748-f782-4c82-90d8-59f9f05e4079","type":"Select"},{"id":"d7cf7fd4-fbb6-4a54-8aad-f3f94435f498","type":"Select"}]},"id":"e644ffcc-4c3f-48b7-a099-a9861baf81de","type":"WidgetBox"},{"attributes":{"children":[{"id":"735129a5-f4cc-45b1-ad56-3b10aa8893a8","type":"Select"}]},"id":"421385b0-ef6d-4e28-a150-7d3c2a8dcf39","type":"WidgetBox"}],"root_ids":["2e87f73a-d55e-490e-97f8-19d0cb0f29ab","bbb2da19-a10c-4c04-a67d-26238658d1c7","421385b0-ef6d-4e28-a150-7d3c2a8dcf39","7ff288ee-a4cc-409f-ab91-e291d1ab9a1e","e644ffcc-4c3f-48b7-a099-a9861baf81de","c05c9402-f14b-4c1a-bb56-1ae5b622b3e0"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"f374c295-cc3b-4cd5-bac8-9ae3ef512820","elementid":"a2330ce2-69c3-4baf-809d-78966d688349","modelid":"c05c9402-f14b-4c1a-bb56-1ae5b622b3e0"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>
